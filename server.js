@@ -24,6 +24,11 @@ app.get('/todos', function (req, res) {
 	res.json(todos);
 });
 
+//About Us Page
+app.get('/about', function (req, res) {
+	res.send('About Us');
+});
+
 //GET //todos/:id
 app.get('/todos/:id',  function (req, res) {
 	var todoId = parseInt(req.params.id);
